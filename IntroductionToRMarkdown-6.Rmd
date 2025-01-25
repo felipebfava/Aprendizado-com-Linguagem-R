@@ -1,0 +1,60 @@
+---
+title: "Primeiro Arquivo em Markdown no R"
+author: "Felipe Biava Favarin"
+date: "2025-01-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Como utilizar as formatações do RMarkdown
+
+#Cabeçalhos 
+# Primeiro nível de cabeçalho
+## Segundo nível de cabeçalho
+### Terceiro nível
+#### vai até as 6 cerquilhas
+###### olha só o tamanho
+
+Para deixar o texto em negrito **coloque dois asteriscos antes e depois da parte em negrito**.
+Utilize somente *um asterisco antes e depois da parte em itálico*
+
+
+
+Aqui vai um texto explicativo ou tanto faz, o que você quiser.
+ Escrever um texto explicando a origem dos dados. Dar detalhes sobre as fontes e qual o processamento será utilizado.
+
+### Lista Simples
+1. Captura de Dados
+2. Pré-processamento de dados
+3. Análise descritiva e validação
+
+
+### Novo capítulo: Processamento
+
+```{Bloco de código}
+head(cars)
+```
+
+Um texto que explica o dado acima. Ideias:
+
+* Ideia 1
+* Ideia 2
+* Ideia 3...
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
