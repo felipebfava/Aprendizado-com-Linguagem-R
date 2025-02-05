@@ -92,3 +92,7 @@ peso_ideal <- function(x, peso) {
 }
 
 peso_ideal("M", 80)
+
+age <- c(22, 21, 23, 42, 34, 45, 34)
+ifelse(age%%2==0, "YES", "NO")
+# se idade par (divide por 2) escolha 'YES' senão 'NO'
